@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api/',
     createProxyMiddleware({
-      target: 'https://algorithm-visualizer-server.vercel.app',
+      target: 'https://algorithm-visualizer-server.onrender.com',
       changeOrigin: true,
     })
   );

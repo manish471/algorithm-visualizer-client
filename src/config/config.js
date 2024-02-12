@@ -1,1 +1,1 @@
-export const BACKEND_URL = 'https://algorithm-visualizer-server.vercel.app';
+export const BACKEND_URL = 'https://algorithm-visualizer-server.onrender.com';
