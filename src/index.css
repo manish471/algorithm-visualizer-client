@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* width */
+div.scroll__dark::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 10px;
+}
+
+/* Track */
+div.scroll__dark::-webkit-scrollbar-track {
+  background: #001528; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+div.scroll__dark::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+div.scroll__dark::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+  border-radius: 10px;
+}
+
+/* ================== */
+
+/* width */
+div.scroll__light::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  border-radius: 10px;
+}
+
+/* Track */
+div.scroll__light::-webkit-scrollbar-track {
+  background: #001528; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+div.scroll__light::-webkit-scrollbar-thumb {
+  background: #fff; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+div.scroll__light::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+  border-radius: 10px;
+}
+
+
+/* ===================================== Animations ======================================= */
+
+/* @keyframes borderAnim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+} */
+
