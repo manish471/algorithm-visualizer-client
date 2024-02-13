@@ -1,1 +1,1 @@
-export const BACKEND_URL = 'https://algorithm-visualizer-server.onrender.com';
+export const BACKEND_URL = 'https://codeeasyviz.onrender.com';

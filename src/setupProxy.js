@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api/',
     createProxyMiddleware({
-      target: 'https://algorithm-visualizer-server.onrender.com',
+      target: 'https://codeeasyviz.onrender.com',
       changeOrigin: true,
     })
   );
