@@ -20,8 +20,6 @@ class ConsoleOuput extends Component {
 
             if(nextProps.isLoading && nextProps.output.stdout !== undefined && nextProps.output.stderr !== undefined){
                 
-                console.log('ppppppppppppppppp')
-                console.log(nextProps.output);
                 //For Output
                 let strout = nextProps.output.stdout;
                 let stdout = [];
@@ -62,14 +60,14 @@ class ConsoleOuput extends Component {
     render() {
         if(this.state.isLoading){
             return (
-                <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'100%',height:'100%'}}>
+                <div style={{display:'flex',justifyContent:'center',padding:'10px',alignItems:'center',width:'100%',height:'100%'}}>
                     <CircularProgress/>
                 </div>
             )
         }
 
         return (
-            <div className={this.props.scroll__class} style={{width:'96%',height:'100%',fontFamily:'monospace',fontSize:'15px',padding:'10px',overflow:'auto'}}>
+            <div className={this.props.scroll__class} style={{width:'100%',height:'100%',fontFamily:'monospace',fontSize:'15px',padding:'10px',overflow:'auto'}}>
                 <span style={{color:'#1B5E20',wordWrap: 'break-word'}}>{this.state.stdout}</span>
                 <span style={{color:'#B71C1C',wordWrap: 'break-word'}}>{this.state.stderr}</span>
             </div>

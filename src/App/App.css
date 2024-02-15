@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+
+/** scrollbar css **/
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+
+/*tooltip */
+.tooltip {
+  z-index: 1;
+  
+  width: 160px;
+  height: 70px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #fff;
+  color: #000;
+  font-weight: 400;
+  
+  position: absolute;
+  top:115%; left:-80%;
+  
+
+  border-radius: 9px;
+  font-size: 15px;
+  text-align: left;
+
+  transform: translateY(9px);
+  transition: .3s linear;
+  animation: odsoky 1s ease-in-out infinite  alternate;
+  
+  box-shadow: 0 0 3px rgba(56, 54, 54, 0.86);
+  font-family:Arial, Helvetica, sans-serif
+}
+
+
+/* tooltip  after*/
+.tooltip::after {
+  content: " ";
+  width: 0;
+  height: 0;
+  
+  border-style: solid;
+  border-width: 12px 12.5px 0 12.5px;
+  border-color: #fff transparent transparent transparent;
+
+  position: absolute;
+  top:-14%;
+  left:40%;
+  transform: rotate(180deg);
+}
+
+@keyframes odsoky {
+  0%{
+    transform: translateY(6px); 
+  }
+
+  100%{
+    transform: translateY(1px); 
+  }
+
+}

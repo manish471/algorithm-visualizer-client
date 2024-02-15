@@ -35,7 +35,6 @@ class CodeDashboard extends Component {
             this.props.getCurrentCode(this.props.data_layout.codeLanguage);
         }, 500);
         
-        this.props.getCodeList();
     }
 
 
@@ -70,12 +69,12 @@ class CodeDashboard extends Component {
                     autoSaveLoader={this.props.data.autoSaveLoader}
                     theme = {this.props.data_layout.theme}
                     lang = {this.props.data_layout.codeLanguage}
+                    isAuthenticated={this.props.user_data.isAuthenticated}
                 />
 
-                <div style={{...verticalSeparator}}></div>
-                <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
-                    <div style={{...codeLayout__section_console,color:'#fff',backgroundColor:this.props.data_layout.theme === 'dark'?'#001528':'#fff'}}>
-                        <div style={{...nav,backgroundColor:this.props.data_layout.theme === 'dark'?'#15314b':'#fff'}}>
+                <div style={{display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',width:'100%'}}>
+                    <div style={{...codeLayout__section_console,color:'#fff',backgroundColor:'#001528'}}>
+                        <div style={{...nav,backgroundColor:'#15314b'}}>
                             <div style={{...nav_section1}}>
                                 <span style={{...nav__text}}>
                                     Output
@@ -87,8 +86,8 @@ class CodeDashboard extends Component {
 
                     <div style={{...horizontalSeparator}}></div>
 
-                    <div style={{...codeLayout__section_datastructure,color:'#fff',backgroundColor:this.props.data_layout.theme === 'dark'?'#001528':'#fff'}}>
-                        <div style={{...nav,backgroundColor:this.props.data_layout.theme === 'dark'?'#15314b':'#fff'}}>
+                    {/* <div style={{...codeLayout__section_datastructure,color:'#fff',backgroundColor:'#001528'}}>
+                        <div style={{...nav,backgroundColor:'#15314b'}}>
                             <div style={{...nav_section1}}>
                                 <span style={{...nav__text}}>
                                     Datastructures
@@ -100,7 +99,7 @@ class CodeDashboard extends Component {
                             </div>
                         </div>
                         <DatastructurePanel scroll__class={this.props.data_layout.scroll__class} lang = {this.props.data_layout.codeLanguage} defaultCode = {this.props.data.currentCodeData && this.props.data.currentCodeData.code}/>
-                    </div>
+                    </div> */}
                 </div>
                 
                 {

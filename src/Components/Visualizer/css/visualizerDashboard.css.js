@@ -8,30 +8,33 @@ export const verticalSeparator={
 
 export const visLayout={
     display:'flex',justifyContent:'flex-start',alignItems:'flex-start',
-    margin:10,
     height:'100%',
+    width:'99%',
+    overflowY:'scroll',
+    marginTop:'85px'
 }
 
 export const visLayout__section_screen={
     display:'flex',justifyContent:'flex-start',alignItems:'flex-start',
     backgroundColor:'#001528',
-    width:'70vw',
-    height:'100%'
+    height:'100%',
+    flexGrow:1,
+    overflowY:'scroll'
 }
 
 export const visLayout__section_tracer={
     display:'flex',justifyContent:'flex-start',alignItems:'flex-start',flexDirection:'column',
-    width:'30vw',height:'100%'
+    width:'30vw',height:'100%',marginRight:'5px'
 }
 
 export const visLayout__section_tracer_code={
     display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column',
     backgroundColor:'#001528',width:'30vw',height:'315px',color:'#fff',
-    overflowY:'auto'
+    overflowY:'scroll'
 }
 
 export const visLayout__section_tracer_DataAndStack={
-    display:'flex',justifyContent:'center',alignItems:'center',width:'30vw',height:'49%'
+    display:'flex',justifyContent:'center',alignItems:'center',width:'30vw',height:'100%',marginTop:'5px'
 }
 
 export const visLayout__section_tracer_Data={

@@ -1,8 +1,11 @@
 export const body={
     backgroundColor:"#02203c",
     display:'flex',
-    flexFlow:'column',
+    flexDirection:'column',
+    justifyContent:'center',
+    alignItems:'center',
     height:'100vh',
+    overflowY:'hidden'
 }
 
 export const loader={

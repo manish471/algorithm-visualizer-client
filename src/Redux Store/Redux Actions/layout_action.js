@@ -35,6 +35,8 @@ export function toggleCodeLangModule(val){
 
 export function getTheme(){
     let theme = window.localStorage.getItem('theme');
+    if(theme === undefined)
+        window.localStorage.setItem('theme','dark');
     return{
         type:'GET_THEME',
         payload:theme
@@ -45,7 +47,7 @@ export function setTheme(theme){
     window.localStorage.setItem('theme',theme);
     return{
         type:'GET_THEME',
-        payload:theme
+        payload:'dark'
     }
 }
 
@@ -53,7 +55,7 @@ export function getCodeLanguage(){
     let lang = window.localStorage.getItem('lang');
     return{
         type:'GET_CODE_LANGUAGE',
-        payload:lang
+        payload:'Javascript'
     }
 }
 

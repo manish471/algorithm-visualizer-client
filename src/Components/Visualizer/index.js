@@ -110,7 +110,7 @@ class Visualizer extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div style={{...body,overflow:'auto',backgroundColor:this.props.data.theme === 'dark'?'#02203c':'#E0E0E0'}} className={this.props.data.scroll__class}>
+            <div style={{...body,overflow:'auto'}} className={this.props.data.scroll__class}>
                 <Header
                     mode={this.props.data.activeMode}
                     isBar={this.props.data.isBar} 

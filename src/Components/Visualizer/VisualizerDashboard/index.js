@@ -38,7 +38,6 @@ class VisualizerDashboard extends Component {
                          code={this.props.data.code}/>
                     </div>
 
-                    <div style={{...horizontalSeparator}}/>
 
                     <div style={{...visLayout__section_tracer_DataAndStack}}>
 
@@ -53,7 +52,7 @@ class VisualizerDashboard extends Component {
 
                 </div>
 
-                <div style={{...verticalSeparator}}/>
+                {/* <div style={{...verticalSeparator}}/> */}
 
                 <div style={{...visLayout__section_screen,backgroundColor:this.props.data_layout.theme === 'dark'?'#001528':'#fff'}}>
                     <Screen metaData = {this.props.data_visualizer.metaData}/>

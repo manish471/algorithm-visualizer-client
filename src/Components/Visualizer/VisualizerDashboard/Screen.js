@@ -298,7 +298,7 @@ class Screen extends Component {
       console.log(')))))))))))')
       console.log(this.props.data_visualizer.timelineData);
         return (
-            <div style={{width:'100%',height:'600px'}} onKeyPress={this.handleKeyPress}>
+            <div style={{width:'100%',height:'100%'}} onKeyPress={this.handleKeyPress}>
                 <div style={{...nav}}>
                         <div style={{...vis__speed}}>
                             <SpeedController/>
@@ -323,7 +323,7 @@ class Screen extends Component {
                         </div>
                 </div>
 
-                <div id="screen" className={this.props.data_layout.scroll__class} ref={this.scrollRef} onScroll={this.handleScroll} style={{width:`${970}px`,height:'590px',overflowY:'auto',display:'flex',justifyContent:'flex-start',alignItems:'flex-start',flexDirection:'column',position:'absolute'}}>
+                <div id="screen" className={this.props.data_layout.scroll__class} ref={this.scrollRef} onScroll={this.handleScroll} style={{width:`100%`,height:'75%',overflowY:'scroll',display:'flex',justifyContent:'flex-start',alignItems:'flex-start',flexDirection:'column',position:'absolute'}}>
 
                         {/* For LinkedList */}
                         {/* {

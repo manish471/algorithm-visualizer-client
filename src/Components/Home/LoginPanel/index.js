@@ -71,7 +71,7 @@ export default function LoginPanel() {
       transition: { duration: 0.5 },
       }}
       whileTap={{ scale: 0.9 }}
-      style={{...navItem,width:'20vw'}}
+      style={{...navItem,width:'20vw',color:'#fff'}}
       onClick={handleClickOpen}
       >
           Login
