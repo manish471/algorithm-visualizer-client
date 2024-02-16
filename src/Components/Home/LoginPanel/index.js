@@ -10,7 +10,7 @@ import { motion } from 'framer-motion';
 
 import GoogleIcon from '../../../Icons/google.png';
 import GithubIcon from '../../../Icons/github.png';
-import { navItem } from '../css/Header.css';
+import { navItem1 } from '../css/Header.css';
 import {BACKEND_URL} from '../../../config/config';
 
 const styles = (theme) => ({
@@ -71,7 +71,7 @@ export default function LoginPanel() {
       transition: { duration: 0.5 },
       }}
       whileTap={{ scale: 0.9 }}
-      style={{...navItem,width:'20vw',color:'#fff'}}
+      style={{...navItem1,width:'20vw',color:'#fff'}}
       onClick={handleClickOpen}
       >
           Login

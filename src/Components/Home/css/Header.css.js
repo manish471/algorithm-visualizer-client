@@ -70,11 +70,23 @@ export const navItem={
     height:'40px',
     cursor:'pointer',
     margin:20,
-    backgroundColor:`#1c54b2`,
+    backgroundColor:`#1769aa`,
     borderRadius:'5px',
     position:'absolute',
     bottom:'100px',
     left:'40px'
+}
+
+export const navItem1={
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    width:'16vw',
+    height:'40px',
+    cursor:'pointer',
+    margin:20,
+    backgroundColor:`#15314b`,
+    borderRadius:'5px',
 }
 
 export const navProfilePhoto={
