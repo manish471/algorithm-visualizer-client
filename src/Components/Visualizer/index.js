@@ -143,7 +143,7 @@ class Visualizer extends Component {
                             </motion.span>
                         </div>
                         <div className={this.props.data.scroll__class} style={{width:'100%',height:'400px',overflowY:'scroll',display:'flex',justifyContent:'flex-start',alignItems:'center',flexDirection:'column'}}>
-                            {/* {
+                            {
                             this.props.data_code.codeList.map(item=>{
                                     return(
                                         <motion.div initial={{opacity:0,y:100,x:0}} animate={{opacity:1,y:0,x:this.state.deletedKey === item._id?800:0}} transition={{ duration: 1}} whileHover={{backgroundColor:'rgba(38, 198, 218,0.3)'}} key={item._id} style={{backgroundColor:'rgba(21,49,75,0.3)',border:item._id === this.props.data_code.currentCodeData._id ?'solid 2px #66BB6A':"",cursor:'pointer',color:'#fff',width:'90%',minHeight:'200px',margin:'10px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
@@ -159,7 +159,7 @@ class Visualizer extends Component {
                                         </motion.div>
                                     )
                                 })
-                            } */}
+                            }
                             <div style={{backgroundColor:'rgba(21,49,75,0.3)',border:'1px dashed #3f51b5',color:'#fff',width:'90%',minHeight:'220px',margin:'10px',display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'}}>
                                 <div style={{display:'flex',justifyContent:'center',alignItems:'center',fontFamily:'monospace',padding:'3px',color:'#fff',opacity:'0.3',width:'100%',minHeight:'150px',backgroundColor:'rgba(120, 144, 156,0.3)'}}>
                                     <Add style={{color:'#eee',fontSize:'50px'}}/>
