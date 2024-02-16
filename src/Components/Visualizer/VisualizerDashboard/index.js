@@ -54,7 +54,7 @@ class VisualizerDashboard extends Component {
 
                 {/* <div style={{...verticalSeparator}}/> */}
 
-                <div style={{...visLayout__section_screen,backgroundColor:'#fff'}}>
+                <div style={{...visLayout__section_screen,backgroundColor:'#001528'}}>
                     <Screen metaData = {this.props.data_visualizer.metaData}/>
                 </div>
 
