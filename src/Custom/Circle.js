@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import {connect} from 'react-redux';
 import ArrayNode from './ArrayNode';
+import { Tooltip } from '@material-ui/core';
 
 class Circle extends Component {
     render() {
@@ -17,6 +18,7 @@ class Circle extends Component {
                         <span style={{fontSize:'25px',color:'#fff'}}>{']'}</span>
                     </div>
                     :
+                    <Tooltip arrow={true} title={this.props.value}>
                     <motion.div 
                         animate={{
                         x: this.props.x,
@@ -32,9 +34,12 @@ class Circle extends Component {
                         transition={{ duration: this.props.data_visualizer.speed/1000 }}
                         style={{...styles,...this.props.styles}}
                         // onDrag={(event,info)=>this.props.handleDrag(event,info,this.props.value)}
-                    >
-                        {this.props.value}
+                    >   
+                        
+                        {this.props.value>999?'{...}':this.props.value}
+
                     </motion.div>
+                    </Tooltip>
                 
                 }
                 </span>

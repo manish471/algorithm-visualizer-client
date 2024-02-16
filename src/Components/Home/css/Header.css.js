@@ -56,23 +56,25 @@ export const title__info={
 
 export const navItems={
     display:'flex',
-    justifyContent:'center',
+    justifyContent:'flex-start',
     alignItems:'center',
-    flexGrow:1,
+    width:'100%'
     // backgroundColor:'blue',
 }
 
 export const navItem={
     display:'flex',
-    justifyContent:'center',
+    justifyContent:'flex-start',
     alignItems:'center',
     width:'16vw',
     height:'40px',
     cursor:'pointer',
     margin:20,
-    backgroundColor:`#15314b`,
+    backgroundColor:`#1c54b2`,
     borderRadius:'5px',
-    
+    position:'absolute',
+    bottom:'100px',
+    left:'40px'
 }
 
 export const navProfilePhoto={
@@ -99,7 +101,7 @@ export const block={
 
 export const block1={
     position:'absolute',
-    top:'150px',
+    top:'100px',
     left:'5vw',
     width:'40vw',
     height:'300px',
@@ -113,7 +115,7 @@ export const block1={
 
 export const block2={
     position:'absolute',
-    top:'150px',
+    top:'100px',
     left:'40vw',
     width:'60vw',
     height:'400px',

@@ -55,7 +55,7 @@ class Header extends Component {
 
     render() {
         return (
-            <div style={{ ...nav__body }}>
+            <div className='visualizer_header'>
                 <div style={{ display: 'flex', width: '70%' }}>
                     <div style={{ ...nav__title }}><Link style={{ ...link }} to="/">Algorithms-Visualizer</Link></div>
                     <motion.div onClick={(this.state.activeMode === 'visualize' || !this.props.data.isAuthenticated) ? null : () => this.props.toggleCodeModule(true)} whileHover={{ backgroundColor: '#4CAF50', transition: { duration: 0.6 } }} style={{ ...nav__icons, backgroundColor: !this.props.data.isAuthenticated ? 'grey' : '#15314b' }} animate={{ backgroundColor: (this.state.activeMode === 'visualize' || !this.props.data.isAuthenticated) ? 'grey' : '#15314b' }}><List style={{ fontSize: 30 }} /></motion.div>
@@ -83,10 +83,10 @@ class Header extends Component {
                     >
                         <Grain />
                     </motion.div>
-                    <motion.div whileHover={{ backgroundColor: '#4CAF50', transition: { duration: 0.6 } }} style={{ ...nav__icons }}>
+                    {/* <motion.div whileHover={{ backgroundColor: '#4CAF50', transition: { duration: 0.6 } }} style={{ ...nav__icons }}>
                         <FiberManualRecord onClick={(event) => this.handleShape(event, false)} style={{ fontSize: 30, color: this.state.isBar ? '#fff' : '#00B0FF' }} />
                         <ViewWeek onClick={(event) => this.handleShape(event, true)} style={{ fontSize: 30, color: !this.state.isBar ? '#fff' : '#00B0FF' }} />
-                    </motion.div>
+                    </motion.div> */}
                     <motion.div whileHover={{ backgroundColor: '#4CAF50', transition: { duration: 0.6 } }} style={{ ...nav__icons, backgroundColor: '#2a3eb1',position:'relative' }}>
                         <Instructions/>
                         <div class="tooltip" style={{display:this.state.showHelpertext?'flex':'none'}}>
