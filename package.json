@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://algovis.onrender.com",
+  "proxy": "https://algoviseasy.vercel.app",
   "eslintConfig": {
     "extends": "react-app"
   },

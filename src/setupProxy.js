@@ -4,7 +4,7 @@ module.exports = function(app) {
   app.use(
     '/api/',
     createProxyMiddleware({
-      target: 'https://algovis.onrender.com',
+      target: 'https://algoviseasy.vercel.app',
       changeOrigin: true,
     })
   );
