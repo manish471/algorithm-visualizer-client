@@ -1,1 +1,1 @@
-export const BACKEND_URL = 'https://algoviseasy.vercel.app';
+export const BACKEND_URL = 'https://algovis.onrender.com';
